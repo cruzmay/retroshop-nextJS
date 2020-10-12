@@ -1,0 +1,114 @@
+@import "../../global.scss";
+
+.header {
+  height: 86px;
+  width: 100%;
+  background: $primary;
+  @include displayFlex(row, space-between, center);
+  &__logo {
+    padding-left: 29px;
+    a img {
+      width: 166px;
+    }
+  }
+
+  &__nav ul {
+    list-style: none;
+    @include displayFlex(row, space-between, center);
+    @media screen and (max-width: $mediano) {
+      position: absolute;
+      display: block;
+      top: 0;
+      background: black;
+      height: 100vh;
+      width: 300px;
+      transition: 0.5s;
+      z-index: 1;
+    }
+  }
+  &__nav ul li a {
+    color: white;
+    padding: 0 30px;
+    text-decoration: none;
+    @media screen and (max-width: $mediano) {
+      font-size: 20px;
+    }
+  }
+  &__nav ul li {
+    @media screen and (max-width: $mediano) {
+      padding-top: 25px;
+    }
+  }
+  &__movile-menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 29px;
+    padding-left: 20px;
+    display: none;
+    outline: none;
+    cursor: pointer;
+    @media screen and (max-width: $mediano) {
+      display: block;
+    }
+  }
+  &__icons {
+    padding-right: 20px;
+    display: flex;
+    @media screen and (max-width: $mediano) {
+      flex-direction: column;
+    }
+    button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 27px;
+      padding: 0 10px;
+      cursor: pointer;
+      outline: none;
+      @media screen and (max-width: $mediano) {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+      }
+    }
+  }
+  &__icons div {
+    @media screen and (max-width: $mediano) {
+      display: flex;
+      flex-direction: row;
+      padding-top: 30px;
+    }
+  }
+  &__icons span {
+    color: white;
+    font-size: 20px;
+  }
+  &__menuIconsMovil {
+    display: none;
+    @media screen and (max-width: $mediano) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+.DesktopIcons {
+  @media screen and (max-width: $mediano) {
+    display: none;
+  }
+}
+
+.close {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: white;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  outline: none;
+  @media screen and (max-width: $mediano) {
+    display: block;
+  }
+}

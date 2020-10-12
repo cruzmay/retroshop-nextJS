@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+// colores
+$primary: #3e3a3a;
+$secondary: #909090;
+$gradient: linear-gradient(91.61deg, #e9b3b3 17.36%, #cc2aa8 100.85%);
+
+// medidas responsive
+$mediano: 950px;
+$movil: 320px;
+
+// mixin para display flex
+@mixin displayFlex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
