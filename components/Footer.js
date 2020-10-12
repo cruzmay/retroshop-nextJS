@@ -1,5 +1,8 @@
 import React from "react"
 import Link from "next/link"
+import { FaFacebookSquare } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+
 
 const Footer = () => (
    <footer className="footer">
@@ -20,8 +23,31 @@ const Footer = () => (
            </div>
        </div>
        <div className="footer__links">
-            
-
+            <div><img src="/images/retro-logo.png"/></div>
+            <div>
+                <h3>SECTIONS</h3>
+                <Link href="/"><a>CLOTH</a></Link>
+                <Link href="/"><a>TOYS</a></Link>
+                <Link href="/"><a>VIDEOGAMES</a></Link>
+                <Link href="/"><a>GIFTS</a></Link>
+            </div>
+            <div>
+                <h3>HELP</h3>
+                <Link href="/"><a>CONTACT</a></Link>
+                <Link href="/"><a>CHAT WITH US</a></Link>
+                <Link href="/"><a>DEVOLUTIONS</a></Link>
+                <Link href="/"><a>SHIPPING STATUS</a></Link>
+            </div>
+            <div>
+                <h3>ABOUT RETROSHOP</h3>
+                <Link href="/"><a>WHO WE ARE</a></Link>
+                <Link href="/"><a>OUR STORY</a></Link>
+            </div>
+            <div>
+                FOLLOW US 
+                    <span><Link href="/"><a><button><FaFacebookSquare/></button></a></Link></span>
+                    <span><Link href="/"><a><button><GrInstagram/></button></a></Link></span>
+            </div>
        </div>
    </footer>
 )
