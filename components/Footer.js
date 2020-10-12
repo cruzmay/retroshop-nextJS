@@ -19,7 +19,10 @@ const Footer = () => (
                 <p>SEE OUR <span><Link href="/"><a>PRIVACY POLICE</a></Link></span></p>
            </div>
        </div>
-       <div className="footer__links"></div>
+       <div className="footer__links">
+            
+
+       </div>
    </footer>
 )
 
